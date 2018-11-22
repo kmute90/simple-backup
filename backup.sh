@@ -6,10 +6,10 @@
 ####################################
 
 # What to backup. 
-backup_files="/home /var/spool/mail /etc /root /boot /opt"
+backup_files="/usr/src/repos/simple-backup"
 
 # Where to backup to.
-dest="/mnt/backup"
+dest="/var/backups/test"
 
 # Create archive filename.
 day=$(date +%A)

@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  crontest:
+    user: "0"
+    build:
+      context: .
+    image: crontest:latest
+    volumes:
+      - ./logs:/var/logs
+    networks:
+      - simplebackup
+
+networks: 
+  simplebackup:
